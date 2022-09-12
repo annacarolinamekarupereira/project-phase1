@@ -1,0 +1,11 @@
+
+.mainDiv {
+    /*put the divs one below another*/
+    display: block;
+
+}
+
+
+@media screen and (max-width: 1920px) {
+
+}
