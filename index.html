@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href='style.css' />
+
+    <title>Project</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="div1">
+            <h1>Welcome to your first year at Hogwarts</h1>
+
+            <p>I'm the Sorting Hat, and due to Covid I will be operating online to determine which of the four school
+                houses you belong to.</p>
+
+            <p>To start please type your name and select which of the following most defines your personality:</p>
+
+            <div>
+                <label for="nameInput">Please enter your name: </label>
+                <input type="text" id="nameInput">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="radio" name="personality" value="Gryffindor" id="Gryffindor">
+                <label for="Gryffindor">Determination, Courage, Brave and Loyalty</label>
+            </div>
+
+            <div>
+                <input type="radio" name="personality" value="Hufflepuff" id="Hufflepuff">
+                <label for="Hufflepuff">Strong sense of justice, Loyalty, Patience, Hard work</label>
+            </div>
+
+            <div>
+                <input type="radio" name="personality" value="Ravenclaw" id="Ravenclaw">
+                <label for="Ravenclaw">Intelligent, Wisdom, Wit, eager to learn.</label>
+            </div>
+
+            <div>
+                <input type="radio" name="personality" value="Slytherin" id="Slytherin">
+                <label for="Slytherin">Strong Leadership, Ambitious, Cunning and Achievement Oriented</label><br>
+            </div>
+            <br>
+            <button id="btn">Submit</button>
+        </div>
+        <div class="2">
+            <p id="output"></p>
+
+            <div>
+                <button id="findMentor">Find your mentor here</button>
+            </div>
+
+
+            <p id="mentor"></p>
+
+            <div>
+                <button id="findCommonRoom">Let's find the location of your common room</button>
+            </div>
+
+        </div>
+
+        <div class="3">
+            <p id="commonRoom"></p>
+
+
+            <script src="index.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
