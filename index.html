@@ -13,7 +13,7 @@
 
 <body>
     <div class="mainDiv">
-        <div class="div1">
+        <div class="houseSelection">
             <p>div 1 starts</p>
             <h1>Welcome to your first year at Hogwarts</h1>
 
@@ -24,7 +24,7 @@
 
             <div>
                 <label for="nameInput">Please enter your name: </label>
-                <input type="text" id="nameInput">
+                <input type="text" id="nameInput" required>
             </div>
 
             <br>
@@ -52,15 +52,17 @@
             <button id="btn">Submit</button>
             <p>div 1 finish</p>
         </div>
-        <div class="2">
+        <div class="findMentor">
             <p>div 2 start</p>
-            <p id="output"></p><br>
+            <p id="outputName"></p><br>
+            <p>The House assigned for you is:</p>
+            <p id="houseAssigned"></p><br>
 
             <div>
                 <button id="findMentor">Find your mentor here</button>
             </div>
 
-
+            <p>Your House Mentor is:</p><br>
             <p id="mentor"></p>
 
             <div>
@@ -69,7 +71,7 @@
             <p>div 2 finish</p>
         </div>
 
-        <div class="3">
+        <div class="findCommonRoom">
             <p>div 3 start
             </p>
             <br>

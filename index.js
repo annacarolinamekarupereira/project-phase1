@@ -44,7 +44,7 @@ button.addEventListener('click', () => {
 
     //here the condition checks if any option was selected, if it was then it will call the fetch function to access the 
     //harry potter API, if none was selected a message will apear in the screen saying nothing was selected
-    output.innerText = selectedPersonality ? fetchFunction(selectedPersonality) : `You haven't selected any option`;
+    houseAssigned.innerText = selectedPersonality ? fetchFunction(selectedPersonality) : `You haven't selected any option`;
 
 });
 
@@ -84,18 +84,19 @@ let fetchFunction = (selectedPersonality) => {
     console.log(studentHouse);
     console.log(studentName);
     //return the result of the school house chosen by the "hat"
-    return `Hi ${studentName}. Your house will be ${studentHouse}`;
+    return houseAssigned.innerText = studentHouse;
 }
 
 let assignNewStudentName = () => {
     //Assigning the name input to the new student
     studentName = document.getElementById("nameInput").value;
+    outputName.innerText = 'Hi ' + studentName;
     console.log(studentName);
 }
 
 buttonFindMentor.addEventListener('click', () => {
     console.log(studentMentor);
-    mentor.innerText = 'Your house mentor is: ' + studentMentor;
+    mentor.innerText = studentMentor;
 });
 
 buttonFindCommonRoom.addEventListener('click', () => {
