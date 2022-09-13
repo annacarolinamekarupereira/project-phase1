@@ -75,7 +75,7 @@ let fetchFunction = (selectedPersonality) => {
                 }
             }
             console.log(data);
-    
+
             console.log(studentHouse);
 
         });
@@ -89,9 +89,10 @@ let fetchFunction = (selectedPersonality) => {
 
 let assignNewStudentName = () => {
     //Assigning the name input to the new student
-    studentName = document.getElementById("nameInput").value;
-    outputName.innerText = 'Hi ' + studentName;
-    console.log(studentName);
+        studentName = document.getElementById("nameInput").value;
+        outputName.innerText = 'Hi ' + studentName;
+        console.log(studentName);
+    
 }
 
 buttonFindMentor.addEventListener('click', () => {
@@ -114,7 +115,7 @@ buttonFindCommonRoom.addEventListener('click', () => {
     } else if (studentHouse == "Slytherin") {
         locationCommonRoom = "In the dungeons, behind an apparently blank stretch of wall.";
         commonRoomPassword = "Serpent";
-    }else{
+    } else {
         locationCommonRoom = "It did not work!!!";
         commonRoomPassword = "It did not work!!!";
     }
