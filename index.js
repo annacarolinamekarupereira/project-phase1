@@ -70,8 +70,12 @@ let fetchFunction = async (selectedPersonality) => {
                 console.log(studentMentor);
                 break;
             }
-        }
-        console.log(data);
+
+        }        
+            console.log(data);
+
+            console.log(studentHouse);
+
 
         console.log(studentHouse);
     } catch (e) {
@@ -87,10 +91,13 @@ let fetchFunction = async (selectedPersonality) => {
 
 let assignNewStudentName = () => {
     //Assigning the name input to the new student
-    studentName = document.getElementById('nameInput').value;
-    outputName.innerText = 'Hi ' + studentName;
-    console.log(studentName);
-};
+
+        studentName = document.getElementById("nameInput").value;
+        outputName.innerText = 'Hi ' + studentName;
+        console.log(studentName);
+    
+}
+
 
 buttonFindMentor.addEventListener('click', () => {
     console.log(studentMentor);
@@ -98,26 +105,25 @@ buttonFindMentor.addEventListener('click', () => {
 });
 
 buttonFindCommonRoom.addEventListener('click', () => {
-    if (studentHouse == 'Gryffindor') {
-        locationCommonRoom =
-            "Gryffindor Tower, through the Fat Lady's portrait";
-        commonRoomPassword = 'Caput Draconis';
-    } else if (studentHouse == 'Ravenclaw') {
-        locationCommonRoom =
-            'West side of the castle, top of the spiral staircase starting on the fifth floor. Door without a doorknob or keyhole, with a bronze knocker in the shape of an eagle.';
-        commonRoomPassword = 'Must answer a riddle asked by the eagle knocker';
-    } else if (studentHouse == 'Hufflepuff') {
-        locationCommonRoom =
-            'Below ground level behind a stack of barrels near the kitchens';
-        commonRoomPassword =
-            'Tap the barrel two from the bottom, middle of the second row, in the rhythm of the founder of the house';
-    } else if (studentHouse == 'Slytherin') {
-        locationCommonRoom =
-            'In the dungeons, behind an apparently blank stretch of wall.';
-        commonRoomPassword = 'Serpent';
+
+
+
+    if (studentHouse == "Gryffindor") {
+        locationCommonRoom = "Gryffindor Tower, through the Fat Lady's portrait";
+        commonRoomPassword = "Caput Draconis";
+    } else if (studentHouse == "Ravenclaw") {
+        locationCommonRoom = "West side of the castle, top of the spiral staircase starting on the fifth floor. Door without a doorknob or keyhole, with a bronze knocker in the shape of an eagle.";
+        commonRoomPassword = "Must answer a riddle asked by the eagle knocker";
+    } else if (studentHouse == "Hufflepuff") {
+        locationCommonRoom = "Below ground level behind a stack of barrels near the kitchens";
+        commonRoomPassword = "Tap the barrel two from the bottom, middle of the second row, in the rhythm of the founder of the house";
+    } else if (studentHouse == "Slytherin") {
+        locationCommonRoom = "In the dungeons, behind an apparently blank stretch of wall.";
+        commonRoomPassword = "Serpent";
     } else {
-        locationCommonRoom = 'It did not work!!!';
-        commonRoomPassword = 'It did not work!!!';
+        locationCommonRoom = "It did not work!!!";
+        commonRoomPassword = "It did not work!!!";
+
     }
 
     commonRoom.innerText =

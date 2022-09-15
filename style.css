@@ -1,14 +1,28 @@
 
+body {
+    background-image: url(img/candlefloat.jpg);
+    color: gold;
+
+    margin: 120px 120px 120px 120px;
+
+}
+
 .mainDiv {
     /*put the divs one below another*/
     display: block;
-    text-align: center;
-    background-color: aqua;
-    
-    
+    text-align: center; 
+    background-color: black;
+    border: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: goldenrod;
 }
 
+.firstDiv {
+    display: block;
+}
 
 @media only screen and (max-width: 700px){
 
 }
+
