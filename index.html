@@ -1,91 +1,131 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="”viewport”"
+            content="”width"
+            ="device-width,"
+            initial-scale="1.0”"
+        />
+        <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-    <link rel="stylesheet" href='style.css' />
+        <title>Project</title>
+    </head>
 
-    <title>Project</title>
-</head>
-
-<body>
-    <div class="mainDiv">
-        <div class="houseSelection">
-            <p>div 1 starts</p>
-            <h1>Welcome to your first year at Hogwarts</h1>
-
-            <p>I'm the Sorting Hat, and due to Covid I will be operating online to determine which of the four school
-                houses you belong to.</p>
-
-            <p>To start please type your name and select which of the following most defines your personality:</p>
-            <div class="firstDiv">
-                <div>
-
-                    <label for="nameInput">Please enter your name: </label>
-                    <input type="text" id="nameInput" />
-
-                </div>
-
-                <br>
-
-                <div>
-                    <input type="radio" name="personality" value="Gryffindor" id="Gryffindor" />
-                    <label for="Gryffindor">Determination, Courage, Brave and Loyalty</label>
-                </div>
-
-                <div>
-                    <input type="radio" name="personality" value="Hufflepuff" id="Hufflepuff" />
-                    <label for="Hufflepuff">Strong sense of justice, Loyalty, Patience, Hard work</label>
-                </div>
-
-                <div>
-                    <input type="radio" name="personality" value="Ravenclaw" id="Ravenclaw" />
-                    <label for="Ravenclaw">Intelligent, Wisdom, Wit, eager to learn.</label>
-                </div>
-
-                <div>
-                    <input type="radio" name="personality" value="Slytherin" id="Slytherin" />
-                    <label for="Slytherin">Strong Leadership, Ambitious, Cunning and Achievement Oriented</label><br>
-                </div>
-                <br>
-                <button id="btn">Submit</button>
-
-                <p>div 1 finish</p>
+    <body>
+        <div class="wrapperHeader">
+            <div class="logo">
+                <img src="img/HogwartsLogo.png" alt="Hogwarts Logo" />
+            </div>
+            <div class="tittleHogwarts">
+                <h1>Hogwarts</h1>
             </div>
         </div>
-        <div class="findMentor">
-            <p>div 2 start</p>
-            <p id="outputName"></p><br>
-            <p>The House assigned for you is:</p>
-            <p id="houseAssigned"></p><br>
 
-            <div>
-                <button id="findMentor">Find your mentor here</button>
+        <div class="mainDiv">
+            <div class="houseSelectionDiv" id="houseSelectionDiv">
+                <h2>Welcome to your first year</h2>
+
+                <div class="wrapperHatDialogue">
+                    <div class="hatDialogueImg">
+                        <img src="img/sortingHat.png" alt="Hogwarts Logo" />
+                    </div>
+                    <div class="hatDialogueTxt">
+                        <p>
+                            I'm the Sorting Hat, and due to Covid I will be
+                            operating online to determine which of the four
+                            school houses you belong to.
+                        </p>
+                    </div>
+                </div>
+                <div class="studentInfo">
+                    <div>
+                        
+                        <input type="text" id="nameInput" class="nameInput" placeholder="Please enter your name"/>
+                    </div>
+
+                    <br />
+                    <p>
+                        Now, select which of the following most defines your
+                        personality:
+                    </p>
+                    <div>
+                        <input
+                            type="radio"
+                            name="personality"
+                            value="Gryffindor"
+                            id="Gryffindor"
+                        />
+                        <label for="Gryffindor"
+                            >Determination, Courage, Brave and Loyalty</label
+                        >
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            name="personality"
+                            value="Hufflepuff"
+                            id="Hufflepuff"
+                        />
+                        <label for="Hufflepuff"
+                            >Strong sense of justice, Loyalty, Patience, Hard
+                            work</label
+                        >
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            name="personality"
+                            value="Ravenclaw"
+                            id="Ravenclaw"
+                        />
+                        <label for="Ravenclaw"
+                            >Intelligent, Wisdom, Wit, eager to learn.</label
+                        >
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            name="personality"
+                            value="Slytherin"
+                            id="Slytherin"
+                        />
+                        <label for="Slytherin"
+                            >Strong Leadership, Ambitious, Cunning and
+                            Achievement Oriented</label
+                        ><br />
+                    </div>
+                    <br />
+                    <button id="btn">Submit</button>
+                </div>
+            </div>
+            <div class="findMentorDiv" id="findMentorDiv">
+                <p id="outputName"></p>
+                <p>The House assigned for you is:</p>
+                <p id="houseAssigned"></p>
+                <div>
+                    <button id="findMentor">Click here to find out who will be your mentor</button>
+                </div>
             </div>
 
-            <p>Your House Mentor is:</p><br>
-            <p id="mentor"></p>
+            <div class="findCommonRoomDiv" id="findCommonRoomDiv">
+                <p>Your House Mentor is:</p>
+                <p id="mentor"></p>
 
-            <div>
-                <button id="findCommonRoom">Let's find the location of your common room</button>
+                <div>
+                    <button id="findCommonRoom">
+                        Now let me show you where is your Common Room
+                    </button>
+                </div>
+                <p id="commonRoom"></p>
             </div>
-            <p>div 2 finish</p>
         </div>
-
-        <div class="findCommonRoom">
-            <p>div 3 start
-            </p>
-            <br>
-            <p id="commonRoom"></p>
-
-
-            <p>div 3 finish</p>
-        </div>
-    </div>
-    <script defer src="index.js"></script>
-</body>
-
+        <script defer src="index.js"></script>
+    </body>
 </html>
